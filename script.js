@@ -13,34 +13,29 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('scrolled', window.scrollY > 100);
 });
 
-// Initialize slides
-let currentSlideIndex = 0;
-const totalSlides = 3;  // Adjust based on the number of slide sets
+let slideIndex = 0;
+const slides = document.querySelector('.slider');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = document.querySelectorAll('.slide').length;
 
-function showSlides() {
-    const slider = document.querySelector('.testimonials-slider');
-    const dots = document.querySelectorAll('.dot');
+function showSlides(n) {
+  slideIndex = n;
 
-    // Move the slider
-    slider.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+  const transformPercentage = -(slideIndex * 100);
+  slides.style.transform = `translateX(${transformPercentage}%)`;
 
-    // Update active dot
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentSlideIndex].classList.add('active');
+  // Update the dots to reflect the active slide
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[slideIndex].classList.add('active');
 }
 
-function currentSlide(index) {
-    currentSlideIndex = index;
-    showSlides();
+// Set up initial slide and dot
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(n);
 }
 
-// Auto slide functionality (Optional)
-setInterval(() => {
-    currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
-    showSlides();
-}, 10000);
-
-showSlides();
 
 document.addEventListener('DOMContentLoaded', function () {
     const monthlyBtn = document.getElementById('monthly');

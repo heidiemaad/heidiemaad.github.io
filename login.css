@@ -129,7 +129,8 @@ a:hover {
         height: auto;
     }
 
-    .left-section, .right-section {
+    .left-section,
+    .right-section {
         width: 100%;
     }
 
@@ -137,7 +138,9 @@ a:hover {
         padding: 30px;
     }
 
-    form label, form input, button {
+    form label,
+    form input,
+    button {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
@@ -159,8 +162,8 @@ a:hover {
 
 @media (max-width: 768px) {
     .left-section {
-        height: 40vh;
-        background-size: cover;
+
+        background-image: none;
     }
 
     .right-section {
@@ -171,7 +174,9 @@ a:hover {
         font-size: 26px;
     }
 
-    form label, form input, button {
+    form label,
+    form input,
+    button {
         width: 100%;
     }
 
@@ -187,7 +192,7 @@ a:hover {
 @media (max-width: 480px) {
     h2 {
         font-size: 22px;
-       
+
     }
 
     p {
@@ -215,12 +220,12 @@ a:hover {
     }
 
     .left-section {
-        height: 30vh;
-        background-size: contain;
+
+        background-image: none;
     }
 
     .right-section {
         padding: 15px;
-       
+
     }
 }

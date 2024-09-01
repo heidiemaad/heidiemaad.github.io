@@ -22,7 +22,7 @@
         <li><a href="#job">CV Builder</a></li>
         <li><a href="#why">About us</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li id="special-link"><a href="#">Special</a></li>
+
       </ul>
       <div class="nav-buttons">
         <button class="login-btn" onclick="location.href='login.html'">Log In</button>
@@ -243,97 +243,33 @@
   </div>
 
   <!-- Scrollable Reviews Section -->
-  <section class="testimonials-section">
-    <h1>What do you say about us ?</h1>
-    <p>
-
-      Hear directly from those who have walked the path with us. Discover the genuine feedback and <br>experiences of
-      our students as they share how our courses have impacted their<br> personal and professional growth.
-    </p>
-    <div class="testimonials-slider">
-
-      <div class="testimonial-card">
-
-        <div class="testimonial-image">
-          <img src="images/profile1.svg" alt="Placeholder Image" />
+  <div class="backgroundreview">
+    <div class="slider-container">
+      <h1>What do you say about us ?</h1>
+      <p>Hear directly from those who have walked the path with us. Discover the genuine feedback and experiences of our
+        students as they share how our courses have impacted their personal and professional growth.</p>
+      <div class="slider">
+        <div class="slide">
+          <img src="images/review1.svg" alt="Placeholder Image 1">
+          <img src="images/review2.svg" alt="Placeholder Image 2">
         </div>
-
-        <p>
-          "This course was a game-changer! The instructor's enthusiasm was
-          infectious, and the materials were engaging."
-        </p>
-        <h3>Sarah Ali</h3>
-        <div class="stars">★★★★★</div>
+        <div class="slide">
+          <img src="images/review3.svg" alt="Placeholder Image 3">
+          <img src="images/review4.svg" alt="Placeholder Image 4">
+        </div>
+        <div class="slide">
+          <img src="images/review5.svg" Placeholder Image 5">
+          <img src="images/review6.svg" alt="Placeholder Image 6">
+        </div>
       </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="images/profile2.svg" alt="Placeholder Image" />
-        </div>
-        <p>
-          "I was initially skeptical about online learning, but this course
-          exceeded my expectations. The flexibility to learn 
-          "
-        </p>
-        <h3>Mahmoud Ashraf</h3>
-        <div class="stars">★★★★☆</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="images/profile3.svg" alt="Placeholder Image" />
-        </div>
-        <p>
-          ""I appreciated the interactive elements of the course. The quizzes and discussions helped "
-        </p>
-        <h3>Mona Mansy</h3>
-        <div class="stars">★★★★★</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="images/profile4.svg" alt="Placeholder Image" />
-        </div>
-        <p>
-          "The course content was incredibly relevant to my career.  "
-        </p>
-        <h3>Mohamed Hany</h3>
-        <div class="stars">★★★★☆</div>
-      </div>
-      <div class="testimonial-card">
-
-        <div class="testimonial-image">
-          <img src="images/profile5.svg" alt="Placeholder Image" />
-        </div>
-
-        <p>
-          " “I would highly recommend this course to anyone looking to improve their skills in this area.""
-        </p>
-        <h3>Micheal Jacob</h3>
-        <div class="stars">★★★★★</div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-image">
-          <img src="images/profile6.svg" alt="Placeholder Image" />
-        </div>
-        <p>
-          ""The instructor was very knowledgeable and patient. They were always available to answer questions and
-          provide additional support. “"
-        </p>
-        <h3>Lenah Mena</h3>
-        <div class="stars">★★★★☆</div>
+      <div class="slider-navigation-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
       </div>
     </div>
+  </div>
 
-
-
-    <div class="dots">
-      <span class="dot" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-  </section>
   <!--prices-->
   <section class="pricing-section" id="pricing">
     <h1>Pricing</h1>
@@ -467,6 +403,7 @@
           <li><a href="#">Courses</a></li>
           <li><a href="#">CV Builder</a></li>
           <li><a href="#">Privacy</a></li>
+          <li id="special-link"><a href="#">Special</a></li>
         </ul>
       </div>
       <div class="footer-right">
@@ -490,6 +427,7 @@
 
 
   <script src="script.js"></script>
+  <script src="js.js"></script>
 </body>
 
 </html>
