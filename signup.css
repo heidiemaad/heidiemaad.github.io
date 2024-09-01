@@ -139,12 +139,13 @@ a:hover {
 
     form label {
         text-align: left;
-        margin-left: none;
+       
+      
     }
 
     .social-login {
         width: 50%;
-        margin-left: 140px;
+       
 
     }
 

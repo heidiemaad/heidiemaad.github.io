@@ -440,8 +440,6 @@ body {
 
 }
 
-
-
 /* Courses Section */
 
 .container {
@@ -764,12 +762,12 @@ body {
 
 @media (max-width: 480px) {
     .headerjob h1 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .headerjob p {
 
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .box h2,
@@ -1115,7 +1113,9 @@ body {
 
     .card {
         margin-bottom: 20px;
+        
     }
+   
 }
 
 /* FAQ Section */
@@ -1197,6 +1197,14 @@ body {
        
     }
 }
+@media (max-width: 480px) {
+    .faq-container h3{
+        font-size: 13px;
+        margin-left: 7px;
+       
+    } 
+}
+
 
 /* Contact Section */
 .contactbackground {
@@ -1520,8 +1528,8 @@ footer {
     .feature-box3,
     .feature-box4 {
         margin-left: 0;
-        margin-top: 20px;
-        width: 30%;
+        margin-top: 40px;
+        width: 50%;
     }
 
     .feature-box1 h3,
@@ -1553,7 +1561,7 @@ footer {
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 70px;
+        padding-top: 50px;
     }
 
     .text-content h1 {
@@ -1592,14 +1600,14 @@ footer {
 
     .navbar ul {
         flex-direction: row;
-        gap: 34px;
+        gap: 30px;
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
     .navbar a {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .nav-buttons {
