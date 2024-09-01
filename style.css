@@ -764,16 +764,17 @@ body {
 
 @media (max-width: 480px) {
     .headerjob h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .headerjob p {
-        font-size: 1em;
+
+        font-size: 0.7em;
     }
 
     .box h2,
     .box1 h2 {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
 
     .box ul,
@@ -793,6 +794,7 @@ body {
     background-color: #E1F0FF;
     background-size: cover;
     padding-bottom: 10px;
+    padding-top: 40px;
 
 
 }
@@ -807,7 +809,7 @@ body {
 .slider-container p {
     text-align: center;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .backgroundreview {
@@ -864,16 +866,30 @@ body {
     }
 
     .slide img {
-        width: 80%;
+        width: 50%;
         /* Make images larger on mobile for better visibility */
         margin-bottom: 20px;
         /* Add space between the two images */
+    }
+
+    .slider-container h1 {
+        text-align: center;
+        font-size: 1.5em;
+
+
+
+    }
+
+    .slider-container p {
+        text-align: center;
+        font-size: 0.7em;
+
     }
 }
 
 @media screen and (max-width: 400px) {
     .slide img {
-        width: 90%;
+        width: 60%;
         /* Even larger on very small screens */
     }
 }
@@ -1112,7 +1128,7 @@ body {
 }
 
 .faq-section h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -1149,7 +1165,7 @@ body {
 .faq-question h3 {
     flex-grow: 1;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: left;
 }
 
@@ -1476,7 +1492,7 @@ footer {
 
     .image-content img {
         max-width: 80%;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .partners-logos img {
